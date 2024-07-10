@@ -17,8 +17,27 @@
       text-decoration:none;
       margin:10%;
       padding:1%;
-		border:2px solid white;
+      border:2px solid white;
     }
+    img{
+      .fadeIn{
+animation-name:fadeInAnime;
+animation-duration:1s;
+animation-fill-mode:forwards;
+opacity:0;
+}
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+	  transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+	  transform: translateY(0px);
+  }
+}
   </style>
 </head>
 
