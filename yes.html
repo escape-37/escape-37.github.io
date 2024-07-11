@@ -4,14 +4,31 @@
 <meta charset="utf-8"/>
   <title>3年7組escape</title>
   <style>
-    
+    .title{
+	     animation-delay:2s;
+		  position:absolute;
+        animation-name: fadeOutAnime;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        opacity: 1;
+}
+
+      @keyframes fadeOutAnime {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0;
+        }
+	}
   </style>
 </head>
 
 <body>
-  <img src="./success.png" style="width:100%;text-align:center;">
-	<h1 style="font-size:2rem;text-align:center;">『Escape From Work』</h1>
-	<p>あらすじ</p>
+  <img src="./success.png" class="title" style="width:100%;text-align:center;background-color:white;">
+	<img src="./title.png" style="width:100%;">
+</div>
 
 </body>
 </html>

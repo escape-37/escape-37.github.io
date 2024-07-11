@@ -80,7 +80,7 @@ left:30%;
 	
 	.works{
 	     animation-delay:4s;
-	     position:absolute;
+		  position:absolute;
         animation-name: fadeOutAnime;
         animation-duration: 1s;
         animation-fill-mode: forwards;
@@ -96,11 +96,28 @@ left:30%;
           opacity: 0;
         }
 	}
+	
+	body{
+	animation-delay:4s;
+	background-color:#C80017;
+	animation-name:fadecolor;
+	animation-duration: 1s;
+   animation-fill-mode: forwards;
+	}
+	
+	@keyframes fadecolor{
+	from{
+	background-color:#C80017;
+	}
+	to{
+	background-color:white;
+	}
+	}
   </style>
 </head>
 
-<body style="background-color:red;">
-<div id="works" class="works" style="height:90vh;width:100%;background-color:red;">
+<body>
+<div id="works" class="works" style="height:90vh;width:100%;background-color:#C80017;">
 
   <img src="./work.png" class="work work1">
   <img src="./work.png" class="work work2">
@@ -112,8 +129,7 @@ left:30%;
   <img src="./work.png" class="work work8">
   <img src="./work.png" class="work work9">
 </div>
-<h1 style="font-size:3rem;text-align:center;">『Escape From Work』</h1>
-	<p>あらすじ</p>
+<img src="./title.png" style="width:100%;">
 </body>
 <script>
 </script>
