@@ -4,11 +4,69 @@
 <meta charset="utf-8"/>
   <title>3年7組escape</title>
   <style>
-   
+.work1{
+animation-delay:1s;
+}
+.work2{
+animation-delay:1.5s
+}
+.work3{
+animation-delay:2s;
+}
+.work4{
+animation-delay:2.5s;
+}
+.work5{
+animation-delay:3s;
+}
+.work6{
+animation-delay:3.5s;
+}
+.work7{
+animation-delay:4s;
+}
+.work8{
+animation-delay:4.5s;
+}
+
+
+   .work{
+	     position:absolute;
+        animation-name: fadeInAnime;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+}
+
+      @keyframes fadeInAnime {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+	}
   </style>
 </head>
 
 <body>
-  <img src="./work.png" style="width:100%;text-align:center;">
+<div id="works">
+  <img src="./work.png" class="work work1">
+  <img src="./work.png" class="work work2">
+  <img src="./work.png" class="work work3">
+  <img src="./work.png" class="work work4">
+  <img src="./work.png" class="work work5">
+  <img src="./work.png" class="work work6">
+  <img src="./work.png" class="work work7">
+  <img src="./work.png" class="work work8">
+</div>
 </body>
+<script>
+let img = document.getElementById("works");
+setTimeout(function(){
+img.style.display=none;},10000);
+</script>
 </html>
