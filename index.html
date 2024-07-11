@@ -8,11 +8,10 @@
     body {
       background-color: black;
       background-image: url(./background.jpg);
-		
+
     }
 
-    .btn,
-    a.btn {
+    .btn,a.btn {
       border-radius: 5px;
       font-size: 2rem;
       font-weight: bold;
@@ -25,21 +24,23 @@
     }
 
     .fadein {
-        animation-name: fadeInAnime;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        opacity:   }
+      animation-name: fadeInAnime;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      opacity:0;
+    }
 
-      @keyframes fadeInAnime {
-        from {
-          opacity: 0;
-          transform: translateY(50px);
-        }
+    @keyframes fadeInAnime {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
 
-        to {
-          opacity: 1;
-          transform: translateY(0px);
-        }
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   </style>
 </head>
 
