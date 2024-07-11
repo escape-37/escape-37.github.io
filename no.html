@@ -1,146 +1,156 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>3年7組escape</title>
   <style>
-.work1{
-animation-delay:0.25s;
-width:20vw;
-top:40%;
-left:40%;
-}
-.work2{
-animation-delay:0.5s;
-width:40vw;
-top:10%;
-left:55%;
-}
-.work3{
-animation-delay:0.75s;
-width:30vw;
-top:35%;
-left:0%;
-}
-.work4{
-animation-delay:1s;
-width:10vw;
-top:10%;
-left:20%;
-}
-.work5{
-animation-delay:1.25s;
-width:20vw;
-top:50%;
-left:80%;
-}
-.work6{
-animation-delay:1.5s;
-width:30vw;
-top:20%;
-left:20%;
-}
-.work7{
-animation-delay:1.75s;
-width:40vw;
-top:5%;
-left:0%;
-}
-.work8{
-animation-delay:2s;
-width:20vw;
-top:60%;
-left:55%;
-}
-.work9{
-animation-delay:2.25s;
-width:45vw;
-top:0;
-left:30%;
-}
-.died{
-animation-delay:2.75s;
-width:90%;
-text-align:center;
-}
+    .work1 {
+      animation-delay: 0.25s;
+      width: 20vw;
+      top: 40%;
+      left: 40%;
+    }
+
+    .work2 {
+      animation-delay: 0.5s;
+      width: 40vw;
+      top: 10%;
+      left: 55%;
+    }
+
+    .work3 {
+      animation-delay: 0.75s;
+      width: 30vw;
+      top: 35%;
+      left: 0%;
+    }
+
+    .work4 {
+      animation-delay: 1s;
+      width: 10vw;
+      top: 10%;
+      left: 20%;
+    }
+
+    .work5 {
+      animation-delay: 1.25s;
+      width: 20vw;
+      top: 50%;
+      left: 80%;
+    }
+
+    .work6 {
+      animation-delay: 1.5s;
+      width: 30vw;
+      top: 20%;
+      left: 20%;
+    }
+
+    .work7 {
+      animation-delay: 1.75s;
+      width: 40vw;
+      top: 5%;
+      left: 0%;
+    }
+
+    .work8 {
+      animation-delay: 2s;
+      width: 20vw;
+      top: 60%;
+      left: 55%;
+    }
+
+    .work9 {
+      animation-delay: 2.25s;
+      width: 45vw;
+      top: 0;
+      left: 30%;
+    }
+
+    .died {
+      animation-delay: 2.75s;
+      width: 90%;
+      text-align: center;
+    }
 
 
 
-   .work{
-	     position:absolute;
-        animation-name: fadeInAnime;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
+    .work {
+      position: absolute;
+      animation-name: fadeInAnime;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInAnime {
+      from {
         opacity: 0;
-}
+      }
 
-      @keyframes fadeInAnime {
-        from {
-          opacity: 0;
-        }
-
-        to {
-          opacity: 1;
-        }
-	}
-	
-	.works{
-	     animation-delay:4s;
-		  position:absolute;
-        animation-name: fadeOutAnime;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
+      to {
         opacity: 1;
-		  background-color:#C80017;
-}
+      }
+    }
 
-      @keyframes fadeOutAnime {
-        from {
-          opacity: 1;
-        }
+    .works {
+      animation-delay: 4s;
+      position: absolute;
+      animation-name: fadeOutAnime;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      opacity: 1;
+      background-color: #C80017;
+    }
 
-        to {
-          opacity: 0;
-        }
-	}
-	
-	body{
-	animation-delay:4s;
-	background-color:#C80017;
-	animation-name:fadecolor;
-	animation-duration: 2.5s;
-   animation-fill-mode: forwards;
-	}
-	
-	@keyframes fadecolor{
-	from{
-	background-color:#C80017;
-	}
-	to{
-	background-color:white;
-	}
-	}
-	
-	
+    @keyframes fadeOutAnime {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    body {
+      animation-delay: 4s;
+      background-color: #C80017;
+      animation-name: fadecolor;
+      animation-duration: 2.5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadecolor {
+      from {
+        background-color: #C80017;
+      }
+
+      to {
+        background-color: white;
+      }
+    }
   </style>
 </head>
 
 <body>
-<div id="works" class="works" style="height:90vh;width:100%;">
+  <div id="works" class="works" style="height:90vh;width:100%;">
 
-  <img src="./work.png" class="work work1">
-  <img src="./work.png" class="work work2">
-  <img src="./work.png" class="work work3">
-  <img src="./work.png" class="work work4">
-  <img src="./work.png" class="work work5">
-  <img src="./work.png" class="work work6">
-  <img src="./work.png" class="work work7">
-  <img src="./work.png" class="work work8">
-  <img src="./work.png" class="work work9">
-  <img src="./died.png" class="work died">
-</div>
-<img src="./title.png" style="width:100%;">
+    <img src="./work.png" class="work work1">
+    <img src="./work.png" class="work work2">
+    <img src="./work.png" class="work work3">
+    <img src="./work.png" class="work work4">
+    <img src="./work.png" class="work work5">
+    <img src="./work.png" class="work work6">
+    <img src="./work.png" class="work work7">
+    <img src="./work.png" class="work work8">
+    <img src="./work.png" class="work work9">
+    <img src="./died.png" class="work died">
+  </div>
+  <img src="./title.png" style="width:100%;margin-top: 10vh;">
 </body>
 <script>
 </script>
+
 </html>
