@@ -5,13 +5,17 @@
   <meta charset="utf-8" />
   <title>3年7組escape</title>
   <style>
-    .title {
-      animation-delay: 1s;
+    .saved {
+      animation-delay: 1.5s;
       position: absolute;
       animation-name: fadeOutAnime;
       animation-duration: 1s;
       animation-fill-mode: forwards;
       opacity: 1;
+      padding-top:20vh;
+      height:100vh;
+      width:100vw;
+      background-color:rgba(0,0,0,.7);
     }
 
     @keyframes fadeOutAnime {
@@ -23,13 +27,16 @@
         opacity: 0;
       }
     }
+    body{
+      margin:0;
+    }
   </style>
 </head>
 
 <body>
-  <img src="./success.png" class="title" style="margin-top:10vh;width:100%;text-align:center;background-color:white;">
-  <img src="./title.png" style="margin-top:10vh;width:100%;">
-  </div>
+  <div class="saved"><img src="./saved.png" style="width:50vw;position:absolute;left:0;right:0;margin:auto;"></div>
+
+  <img src="./title.png" style="width:100%;margin-top: 10vh;">
 
 </body>
 
