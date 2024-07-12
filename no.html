@@ -65,15 +65,15 @@
 
     .work9 {
       animation-delay: 2.25s;
-      width: 45vw;
+      height:100vh;
       top: 0;
-      left: 30%;
+      left:calc(50vw - 35vh);
     }
 
-    .died {
+    .caught {
       animation-delay: 2.75s;
-      width: 90%;
-      text-align: center;
+      width: 100%;
+      top:calc(50vh - 28vw)
     }
 
 
@@ -117,28 +117,13 @@
     }
 
     body {
-      animation-delay: 4s;
-      background-color: #C80017;
-      animation-name: fadecolor;
-      animation-duration: 2.5s;
-      animation-fill-mode: forwards;
       margin:0;
-    }
-
-    @keyframes fadecolor {
-      from {
-        background-color: #C80017;
-      }
-
-      to {
-        background-color: white;
-      }
     }
   </style>
 </head>
 
 <body>
-  <div id="works" class="works" style="height:90vh;width:100%;">
+  <div id="works" class="works" style="height:100vh;width:100%;">
 
     <img src="./work.png" class="work work1">
     <img src="./work.png" class="work work2">
@@ -149,7 +134,7 @@
     <img src="./work.png" class="work work7">
     <img src="./work.png" class="work work8">
     <img src="./work.png" class="work work9">
-    <img src="./died.png" class="work died">
+    <img src="./caught.png" class="work center caught">
   </div>
   <img src="./title.png" style="width:100%;margin-top: 10vh;">
 </body>
