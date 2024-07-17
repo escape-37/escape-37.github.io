@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
     dataType: 'json',
     success: function(res) {
       // アクセス数の出力フォーマットは append() 内で定義している．
-      jQuery(".counter").append('累計&ensp;'+res.total+'&ensp;今日&ensp;'+res.today+'&ensp;昨日&ensp;'+res.yesterday);
+      jQuery(".counter").append('あなたは'+res.total+'人目の優秀嵯峨野生です！');
     }
   });
 });
