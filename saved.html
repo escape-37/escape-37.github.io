@@ -36,7 +36,7 @@
     .black{
       position: absolute;
       animation-name: black;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-fill-mode: forwards;
       height:100vh;
       width:100vw;
@@ -61,14 +61,14 @@
     }
   </style>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <body>
-  
-  <div class="saved"><img src="./saved.png" style="width:50vw;position:absolute;left:0;right:0;margin:auto;"></div>
-  <div class="black">
-  </div>
+  <div class="saved"><img src="./saved.png" style="width:70vw;position:absolute;left:0;right:0;margin:auto;"></div>
+  <div class="black"></div>
   <img src="./title.png" style="width:100%;margin-top: 10vh;">
-
+<div id="contents"></div>
+<script> $("#contents").load('./common.html');</script>
 </body>
 
 </html>
