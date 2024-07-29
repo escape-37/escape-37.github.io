@@ -15,6 +15,14 @@
   li{
     padding-top:10px;
   }
+  img{
+    pointer-events:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-touch-callout:none;
+    -moz-user-select:none;
+    user-select:none;
+  }
 </style>
 </head>
 
@@ -27,7 +35,7 @@ setTimeout(function() {
 
 <body>
 <hr>
-<div class="commondiv">
+<div class="commondiv"onselectstart="return false;" onmousedown="return false;">
   <h1>出演者</h1>
   <ul>
   <li><span>主演　生徒役 </span><span class="name">渡辺大悟 (わたなべ・だいご)</span></li>
