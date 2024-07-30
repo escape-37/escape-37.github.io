@@ -1,96 +1,165 @@
 <!DOCTYPE html>
+
 <head>
-<meta charset="utf-8" />
-<style>
-  html,body{
-    overflow-x: hidden;
-  }
-  .commonbody{
-    margin-bottom:0px;
-    padding-bottom:0px;
-  }
-  .commondiv{
-    padding:0px 5vw 300px;
-  }
-  .name{
-    font-weight:bold;
-    padding-left:20px;
-  }
-  li span{
-    font-size:1.5rem;
-  }
-  li{
-    padding-top:20px;
-  }
-  .commondiv img{
-    pointer-events:none;
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-touch-callout:none;
-    -moz-user-select:none;
-    user-select:none;
-    border:1px solid;
-    width:min(30vw,350px);
-  }
-  footer{
-    width:100vw;
-    background-color:#1c143b;
-    position:absolute;
-    left:0;
-  }
-  .footer{
-    color:white;
-    text-align:center;
-    padding:50px 0;
-  }
-</style>
+  <meta charset="utf-8" />
+  <style>
+
+    .commonbody {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+
+    .commondiv {
+      padding: 0px 5vw 300px;
+      overflow: visible !important;
+    }
+
+    .cast {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    .name {
+      padding-left: 30px;
+      font-size: 1.5rem;
+      ;
+    }
+
+    .commondiv img {
+      pointer-events: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-touch-callout: none;
+      -moz-user-select: none;
+      user-select: none;
+      border: 1px solid;
+      width: min(30vw, 350px);
+      margin-right: 50px;
+    }
+
+    .flex {
+      margin-bottom: 50px;
+      display: flex;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #1c143b;
+      position: absolute;
+      left: 0;
+    }
+
+    .footer {
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .flex p {
+      font-size: 1.5rem;
+      margin-left: 30px;
+      ;
+    }
+    .commondiv h1{
+      margin: 40px 0px;
+      position: sticky;
+      top: 0px;
+      background-color:rgb(238, 241, 255);
+      padding: 20px 10px;
+      border-bottom: 3px solid;
+    }
+    .castdiv{
+      padding-left: 30px;
+    }
+  </style>
 </head>
 
 <script>
-setTimeout(function() {
-  document.getElementById("works").style.display = "none";
-  document.getElementById("works").style.display = "none";
-}, 5000);
+  setTimeout(function () {
+    document.getElementById("works").style.display = "none";
+    document.getElementById("works").style.display = "none";
+  }, 5000);
 </script>
 
 <body class="commonbody">
-<div class="commondiv"onselectstart="return false;" onmousedown="return false;">
-  <hr>
-  <h1>監督</h1>
-  <li><span class="name">藤本昌大(ふじもと・まさひろ)</span></li>
-  <img src="./cast-fujimoto.png">
-  <h1>出演者</h1>
-  <ul>
-  <li><span>主演 生徒役 </span><span class="name">渡辺大悟 (わたなべ・だいご)</span></li>
-  <img src="./cast-watanabe.png">
+  <div class="commondiv" onselectstart="return false;" onmousedown="return false;">
+    <hr>
 
-  <li><span>先生役 </span><span class="name">乙野泉 (おとの・いずみ)</span></li>
-  <img src="./cast-otono.png">
+    <h1>監督</h1>
+    <div class="castdiv">
+      
+      <div class="flex">
+        <img src="./cast-fujimoto.png">
+        <div>
+          <span class="cast">藤本昌大 </span><span class="name">(ふじもと・まさひろ)</span>
+          <p>3年間最前線を走り続けてきた男は最後の文化祭を前に何を思うのか。3年間で培った指導力を活かし、最後の文化祭も監督としてクラスを率いる。</p>
+        </div>
+      </div>
+    </div>
 
-  <li><span>生徒役 </span><span class="name">吉田嵩 (よしだ・たかし)</span></li>
-  <img src="./cast-yoshida.png">
-
-  <li><span>生徒役 </span><span class="name">佐藤陽太郎 (さとう・ようたろう)</span></li>
-  <img src="./cast-sato.png">
-
-  <li><span>生徒役 </span><span class="name">大冨紗幸 (おおとみ・さゆき)</span></li>
-  <img src="./cast-otomi.png">
-
-  <li><span>生徒役 </span><span class="name">徳重蒼太 (とくしげ・そうた)</span></li>
-  <img src="./cast-tokushige.png">
-  </ul>
+    <h1>出演者</h1>
+<div class="castdiv">
   
-<hr>
-
-<p>あらすじ</p>
-<p>京都府立S高等学校。この理系コースのワーク提出率は驚異の3.7%。そんな状況を打開すべく、国語教師は「図書館監禁作戦」を展開する。逃げ惑う理系学生。それを追う国語教師。理系学生の運命はどうなるのか、主人公の迎える結末とは！？
-学園逃走系エンターテインメント劇「Escape from Work」ご期待ください。
-</p>
-
-
+      <div class="flex">
+        <img src="./cast-watanabe.png">
+        <div>
+          <span class="cast">主演 生徒 渡辺役</span><span class="name">渡辺大悟 (わたなべ・だいご)</span>
+          <p>3-7の主砲。</p>
+        </div>
+      </div>
+  
+      <div class="flex">
+        <img src="./cast-otono.png">
+        <div>
+          <span class="cast">教師役 </span><span class="name">乙野泉 (おとの・いずみ)</span>
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="flex">
+        <img src="./cast-yoshida.png">
+        <div>
+          <span class="cast">生徒 吉田役</span><span class="name">吉田嵩 (よしだ・たかし)</span>
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="flex">
+        <img src="./cast-sato.png">
+        <div>
+          <span class="cast">生徒 佐藤役</span><span class="name">佐藤陽太郎 (さとう・ようたろう)</span>
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="flex">
+        <img src="./cast-otomi.png">
+        <div>
+          <span class="cast">生徒 大富役</span><span class="name">大冨紗幸 (おおとみ・さゆき)</span>
+          <p></p>
+        </div>
+      </div>
+  
+      <div class="flex">
+        <img src="./cast-tokushige.png">
+        <div>
+          <span class="cast">生徒 徳重役</span><span class="name">徳重蒼太 (とくしげ・そうた)</span>
+          <p></p>
+        </div>
+      </div>
+  
 </div>
+    <hr>
+
+    <p>あらすじ</p>
+    <p>京都府立S高等学校。この理系コースのワーク提出率は驚異の3.7%。そんな状況を打開すべく、国語教師は「図書館監禁作戦」を展開する。逃げ惑う理系学生。それを追う国語教師。理系学生の運命はどうなるのか、主人公の迎える結末とは！？
+      学園逃走系エンターテインメント劇「Escape from Work」ご期待ください。
+    </p>
+
+
+  </div>
 
   <footer>
-    <p class="footer">©2024 sagano high school 3-7   All Rights Reserved.</p>
+    <p class="footer">©2024 sagano high school 3-7</p>
   </footer>
 </body>
